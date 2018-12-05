@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+	
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sam's Club Cake Ordering</title>
+		
+		<link rel="stylesheet" href="css/main.css" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js"></script>
+		<script type="text/javascript" src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+<style>
+body{
+height: 100%;
+width: 100%;
+font-family: "Times New Roman", sans-serif;
+background-color: #C1EDE9;
+}
+
+.head{ 
+    text-align: center; 
+    position: -webkit-sticky;
+    position: sticky;
+	background-color: #C1EDE9;
+	margin-top
+}
+
+
+</style>
+	<body>
+	<h1 class="head">Create Your Own Cake!</h1>
+    <div id="gui">
+	<div id = "typeDiv">
+	<p> Type of Cake </p>
+	<select id="type-dropDown" onChange="changeLayer()">
+	<option value="">None</option>
+	<option value="round">Round</option>
+	<!--option value="full sheet">Full Sheet</option-->
+	</select>
+	</div>
+	
+	<div id="layerDiv">
+		<p>Number of Layers</p>
+        <select id="layer-dropDown" onChange="changeLayer()">
+		<option value="">None</option>
+          <option value="one">One Layer</option>
+		   <option value="two">Two Layers</option>
+		   <option value="three">Three Layers</option>
+		</select>
+      </div>
+      
+      <div id="topFlavourDiv">
+	  <p>Flavours</p>
+        <select id="topflavour-dropDown" onChange="changeFlavour()">
+			<option value="">None</option>
+          <option value="raspberry">Raspberry, Choco, Vanilla </option>
+          <option value="chocolate">Choco, Apple, Vannila </option>
+          <option value="blueberry">Blueberry, Ganache, Vannila </option>
+          <option value="lemon">Lemon, Pineapple , Choco </option>
+        </select>
+      </div>
+      <!--input id="name-input" type="text" value="" placeholder="Writing on Cake" maxlength="10">
+      <button id="changeName-btn" type="button" onclick="changeName()">Writing On the cake</button-->
+      <button id="lights-out" type="button" onclick="lightsOut()">Place Candle</button>
+		  <button id="blow-me" type="button" onclick="">Order Here</button>
+      
+    </div>
+    
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
